@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
-{% include head.html %}
-
-<body>
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-
-    {% include nav.html %}
-
-	<main>
-		<article>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        {{ content }}
-                    </div>
-                </div>
-            </div>
-		</article>
-    </main>
-
-    {% include footer.html %}
-
-    {% include scripts.html %}
-
-</body>
-
-</html>
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            {{ content }}
+        </div>
+    </div>
+</div>
