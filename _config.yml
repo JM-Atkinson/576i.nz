@@ -16,9 +16,7 @@
 title: 576i
 email: josh@576i.nz
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A wax lyrical about whatever my hobbyist experiences bring me across that I can be bothered to write about. Expect content on Unix, hardware, system administration, and occasionally some hardware restoration and other fun things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://576i.nz" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  JMAtkinson

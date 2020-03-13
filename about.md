@@ -1,5 +1,7 @@
 ---
 layout: article
+title: About 576i
+categories: [Meta]
 ---
 
 # Who am I?
@@ -14,8 +16,14 @@ I also have keen interests in personal finance, economics, politics, and cinema,
 
 This little site is essentially a wax lyrical about whatever my hobbyist experiences bring me across that I can be bothered to write about. Expect content on Unix, hardware, system administration, and occasionally some hardware restoration and other fun things.
 
+# WTF does 576i mean?
+
+You can find out what 576i means [here]({{site.baseurl}}/576i/).
+
 # Where can you contact me?
 
 I am reachable at <josh@576i.nz>, this is the best way to get in touch—I actually read my emails!
+
+If you use LinkedIn, I have one of [those](https://www.linkedin.com/in/josh-atkinson-4b386b193/) too.
 
 Otherwise I have a [GitHub](https://github.com/JM-Atkinson), but I don't use it much.

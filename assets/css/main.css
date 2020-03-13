@@ -109,17 +109,6 @@ textarea {
     }
   }
 
- /* Pinning the footer to the bottom of the page */
-
-  .footer {
-	position: sticky;
-	bottom: 0;
-	width: 100%;
-	height: 35px;
-	line-height: 24px;
-	background-color: #ffffff;
-  }
-
  /* Font selections */
 
   body {
@@ -141,6 +130,12 @@ textarea {
   .navbar-brand {
       padding-top: 0px;
       padding-bottom: 0px;
+  }
+
+ /* Pinning the footer to the bottom of the page */
+
+   .footer {
+      background-color: #ffffff;
   }
 
  /* Blockquote stylings */
