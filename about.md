@@ -1,6 +1,7 @@
 ---
 layout: article
 title: About 576i
+permalink: /about/
 categories: [Meta]
 ---
 

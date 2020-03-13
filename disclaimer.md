@@ -1,5 +1,7 @@
 ---
 layout: article
+permalink: /disclaimers/
+categories: [Meta]
 ---
 
 ## Disclaimers

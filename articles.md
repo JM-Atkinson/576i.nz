@@ -1,5 +1,6 @@
 ---
 layout: article
+permalink: /articles/
 ---
 
 Looking for something? You may find it here.
