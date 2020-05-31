@@ -1,6 +1,6 @@
 ---
 layout: article
-permalink: /disclaimers/
+permalink: /disclaimer/
 categories: [Meta]
 ---
 

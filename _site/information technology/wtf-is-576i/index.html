@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Tag needed to make Gsuite's alias domain work -->
+    <meta name="google-site-verification" content="aPd56a002n6crex_xA9d-FjJ9KcOMeWAObVY5mxBje0" />
+
+    <title>WTF is 576i?</title>
+  
+    <!-- Thing to make tabs on Chrome show up with colour -->
+    <meta name="theme-color" content="#ffc107">
+  
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/icon.png">
+  
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  
+    <!-- highlight.js (Monokai style) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
+  
+    <!-- Gfonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Source+Code+Pro" rel="stylesheet">
+  
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+       <img src="/assets/img/576i.png" alt="576i" height="50" width="160">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/articles">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+	<main>
+        <article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <h1>WTF is 576i?</h1>
+                <p class="text-muted font-italic">12 Mar 2020</p>
+                <hr>
+                <div class="text-justify table-hover table-responsive img-fluid">
+                    <h3 id="wtf-is-576i-and-what-does-that-mean">WTF is 576i and what does that mean?</h3>
+
+<p>576i is a the display specifications for regular format PAL television. It stands for 576 lines vertically, interlaced over 50 fields.</p>
+
+<p>Let’s break that down. Before the days of progressive digital video like we have on all modern computers and digital television broadcasts, video for television was encoded using analog standards. There were/are three competing standards for this — NTSC (National Television System Committee), PAL (Phase Alternating Line), and SECAM. SECAM is essentially a slightly modified PAL, so there are two major standards at play here.</p>
+
+<h4 id="ntsc-or-pal">NTSC or PAL?</h4>
+
+<p>Much like which countries drive on which side of the road, wether countries use NTSC or PAL largely depends on their neighbors, and their desired marketability for products and content they make to be used in other countries.</p>
+
+<p>Let’s have a look at the NTSC and PAL distribution world wide:</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg" alt="NTSC &amp; PAL distribution" title="NTSC &amp; PAL distribution" /></p>
+
+<p>As we can see, NTSC(-J) dominates in northern, central, and the top half of southern America, and also Japan, which is notable. PAL and its close cousin SECAM dominates everywhere else. If you use the same display standard as your neighbor, this makes it very easy for you to share video products across your markets. You can exchange tapes and video recordings to broadcast on TV. Your game console systems have interchangeable games. So why not make it so everything can use both?</p>
+
+<p>Unfortunately, when you have a standard, everything has to adapt to the standard for the processing chain to work. In a PAL environment, Your video tape is PAL, the VCR is PAL, and your TV is also PAL. If you make a swapping VCR, then you also need multi-format tapes, and a swapping TV as well. This is a huge cost for the consumer, and a huge cost to the industry. As far as the situation was in NTSC and PAL’s hey-day, it was just too hard.</p>
+
+<p>It’s <em>possible</em>, but not straight-forward to convert between the systems, and video quality is lost in the process, plus, next to no consumer devices are actually able to do this. A PAL game console plays PAL games. A PAL VCR records and plays back PAL video. In recent years we are able to convert with consumer PCs, but we don’t use PAL and NTSC now, so its usefulness is passed its used-by date.</p>
+
+<p>Another issue here is timing. As we will shortly learn, NTSC and PAL use different frame rates. Converting between them causes video to either speed up (PAL -&gt; NTSC) or slow down (NTSC -&gt; PAL). This if left unchecked can alter runtimes for hour long shows by as much as minutes. Some feature length films shown on TV after conversion were actually 4-10 minutes shorter or longer than their real run time because of the effects. We can mitigate this by changing the frames. For PAL to NTSC this is fine, as we simply drop NTSC’s extra frames to make correct the correct PAL frame rate. But for NTSC to PAL, frames have to be repeated to make up the difference. There are lots of techniques to do this, but it still affects the video quality regardless. This has traditionally made NTSC -&gt; PAL transmission easier.</p>
+
+<h4 id="what-are-the-actual-differences-between-the-two">What are the actual differences between the two?</h4>
+
+<p>With the incompatibility of NTSC and PAL established, what actually sets them apart?</p>
+
+<p>There are two major components that define how a video looks to the viewer. One is the resolution or definition of the video i.e. how clear the picture is. Two is the speed at which the video is refreshed to depict motion, commonly known as the refresh rate (or frame rate in progressive video). These two values are what changes in NTSC and PAL.</p>
+
+<p>Let’s look at NTSC first:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resolution</td>
+      <td>480 lines</td>
+    </tr>
+    <tr>
+      <td>Refresh rate</td>
+      <td>29.976</td>
+    </tr>
+    <tr>
+      <td>Field rate</td>
+      <td>59.94</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>But what the heck are lines? I thought video resolution was measured in pixels! - And you’d be right, if we were talking about progressive digital video, however, we’re talking about analog video, and there are no pixels here. Analog video is drawn on the screen by an electron gun (sounds cool right?) firing electrons in horizontal lines across the screen. The physical size of theses lines are determined by a combination of the resolution of the video standard in use, and the physical size of the screen, where as many lines are available are displayed to fill the physical screen size. In the case of NTSC, this is 480 lines.</p>
+
+<h4 id="interlacing">Interlacing</h4>
+
+<p>But what are fields? - This is the cool part. If you ever watched television on a CRT did you ever wonder why it was so much more fluid than video on computers (at least before 60fps become common)? This is because a little trick is pulled by both NTSC and PAL to ‘double’ the frame rate, which makes it look more fluid to the human eye. This process is called interlacing. Interlacing takes every second line in a frame and delays it by (in the case of NTSC) 1/60th of a second. What this results in is that instead of 30 whole <em>frames</em> in a second being displayed, 60 <em>fields</em> are actually displayed, as half the image comes every 1/60th of a second. On displays that are designed to work with interlaced video, this makes the video actually look like 60 <em>frames</em> per second , even though it’s not. The loss of quality of those missing 30 true frames per second is almost imperceivable to the human eye, which is why they developed this technique to save spectrum for broadcast, instead of changing the number of lines, which would’ve reduced the quality visibly.</p>
+
+<h5 id="why-is-interlacing-bad-then---ive-heard-people-say-its-bad">Why is interlacing bad then? - I’ve heard people say it’s bad.</h5>
+
+<p>Well, it’s not, <em>at least when it’s displayed correctly.</em> Progressive displays (whose primary difference from interlacing is that it displays a whole frame at once) are incapable of showing interlacing correctly, and actually show the ever so slight difference in frames as they display the two separate field sets simultaneously. This also has the effect of halving the effective frame rate. What this looks like is that edges in frames appear sawtoothed:</p>
+
+<p><img src="/assets/img/freddie1.jpg" alt="Interlaced Freddie" title="Interlaced Freddie" /></p>
+
+<p>An interesting effect is created on scene changes, where two images appear together with alternating lines showing each image:</p>
+
+<p><img src="/assets/img/freddie2.jpg" alt="Freddie and crowd" title="Freddie and crowd" /></p>
+
+<p>You can mitigate this by converting interlaced video to progressive via conversion tools, which get more and more advanced every day. <a href="https://handbrake.fr/">Handbrake</a>, for example, can do this, and techniques to achieve this with as little information loss as possible via machine learning are also developing, but the issue is that these techniques take time and effort to apply, and most people just don’t care. Which means that when they upload their family VHS tapes, old TV shows and other interlaced media, we see the jaggies on YouTube and where-ever else the content gets shared. This has led to minor stigma against interlacing.</p>
+
+<p>The truth of it is that interlacing should die. Displays that can correctly process interlaced content are becoming rarer by the day as virtually every new device since 2010 uses a progressive display. Computers have used progressive displays since their inception, and that wont change anytime soon. This isn’t a problem now as we have the ability to have true 60fps video, but it was a cool technique back in the day.</p>
+
+<h4 id="so-what-about-pal">So what about PAL?</h4>
+
+<p>Now that we know what fields and interlacing are, lets look at PAL:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resolution</td>
+      <td>576 lines</td>
+    </tr>
+    <tr>
+      <td>Refresh rate</td>
+      <td>24.976</td>
+    </tr>
+    <tr>
+      <td>Field rate</td>
+      <td>49.94</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>So PAL has more lines but less fields. This means the definition is better, but the motion is less fluid. And, functionally, thats the only difference between NTSC and PAL. They both use interlacing, fields, lines and even the same colour encoding scheme. To most people, they’d struggle to tell the difference if sat down in front of two TVs, one showing NTSC video, and one showing PAL. But the difference is there, and because of it a huge amount of products made between 1970 and 2010 (especially in Japan) come in both PAL and NTSC variants. One example is the Nintendo Wii. If you by a PAL Wii, you need to buy the corresponding PAL Wii games, indicated by the encoding type on the DVD case:</p>
+
+<p><img src="/assets/img/wiipartypal.jpg" alt="Wii Party" title="Wii Party" /></p>
+
+<p>The Nintendo Wii is actually capable of playing the opposing standard’s games, but not without first jailbreaking it and un-region locking it. And even if the games work, the settings menu is borked.</p>
+
+<h4 id="you-still-havent-told-me-where-576i-comes-from">You still haven’t told me where ‘576i’ comes from!</h4>
+
+<p>In recent years, a quick standard to describe how a video is encoded has arisen from the apparent need to reduce confusion in video types. This standard is very simple: for interlaced video it’s the number of lines with an ‘i’ to indicate interlacing, so PAL is 576i! For progressive video it’s the number of vertical pixels with a ‘p’ to indicate progressive. This is a common misconception where people think the ‘p’ means pixels, it does not! A standard Full HD monitor would be notated as 1080p.</p>
+
+<p>If you haven’t guessed I live in a PAL region, New Zealand, and I always wondered why every device and DVD we bought had PAL written on it until I learned why, and now hopefully you know too! 576i I think appropriately sums up the content of this site, being a reference to old retro technology, and it’s nice and short.</p>
+
+<p>You can read more about this on <a href="https://en.wikipedia.org/wiki/Broadcast_television_systems">Wikipedia</a> if you are interested.</p>
+
+<h5 id="bonus-why-are-ntscpals-refresh-rates-2497629976-why-not-2530">Bonus: Why are NTSC/PAL’s refresh rates 24.976/29.976? Why not 25/30?</h5>
+
+<p>This is super-duper complicated to fully explain, so i’ll give a brief overview. NTSC and PAL were invented before colour television was a thing. At some point in the 1960s, they decided that colour was feasible and they should include it in television broadcasts, but the problem was, they had constructed wildly expensive NTSC and PAL television networks and they wern’t so keen on developing a new system, requiring the whole market to go out and buy new televisions to have <em>any</em> picture, let alone colour. Maintaining two separate encoding schemes was expensive, and they didn’t have the radio spectrum nor funds to do it.</p>
+
+<p>The solution was to modify the current system. They had to do it in a way that meant black and white TV’s could still watch, but also enable colour to be broadcasted to TV’s that did support it. To achieve this, they simply carved a small chunk of spectrum out of the frame rate (precisely 0.02 seconds worth), and dumped the colour information there. This worked to achieve both their goals, as the original TV’s just ignored the information. This permanently reduced NTSC and PAL’s frame rate for the rest of it’s life span.</p>
+
+<p>Unlike the issue converting between NTSC and PAL as mentioned earlier, the difference is too small to really affect runtimes so it’s not a huge issue when converting to progressive. With the return to progressive, we have returned to the rounded frame rates, and due to NTSC regions dominating video storage and playback design systems, PAL’s 25 &amp; 50 frame/field rates respectively are fast becoming a thing of the past.</p>
+
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</article>
+
+    </main>
+
+    <footer class="sticky-bottom footer py-1 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="m-0 text-dark">576i — <a href="mailto:josh@576i.nz">Contact me...</a></p>
+        </div>
+        <div class="col-sm-4">
+          <p class="m-0 text-center text-dark"><a href="/about/">About</a> &bull; <a href="/disclaimer/">Disclaimers</a> &bull; <a href="http://creativecommons.org/licenses/by/4.0/">License</a></p>
+        </div>
+        <div class="col-sm-4">
+           <p class="m-0 text-right text-muted font-italic">Copyright &copy; Josh Atkinson MMXX</p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+      <!-- H5BP JS scripts -->
+  <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  
+  <!-- Bootstrap scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <!-- highlight.js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Custom scripts -->
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-120501591-1', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</body>
+
+</html>

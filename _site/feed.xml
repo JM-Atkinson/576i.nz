@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-31T12:52:43+12:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">576i</title><subtitle>A wax lyrical about whatever my hobbyist experiences bring me across that I can be bothered to write about. Expect content on Unix, hardware, system administration, and occasionally some hardware restoration and other fun things.</subtitle><entry><title type="html">WTF is 576i?</title><link href="http://localhost:4000/information%20technology/wtf-is-576i/" rel="alternate" type="text/html" title="WTF is 576i?" /><published>2020-03-12T00:00:00+13:00</published><updated>2020-03-12T00:00:00+13:00</updated><id>http://localhost:4000/information%20technology/wtf-is-576i</id><content type="html" xml:base="http://localhost:4000/information%20technology/wtf-is-576i/">&lt;h3 id=&quot;wtf-is-576i-and-what-does-that-mean&quot;&gt;WTF is 576i and what does that mean?&lt;/h3&gt;
+
+&lt;p&gt;576i is a the display specifications for regular format PAL television. It stands for 576 lines vertically, interlaced over 50 fields.&lt;/p&gt;
+
+&lt;p&gt;Let’s break that down. Before the days of progressive digital video like we have on all modern computers and digital television broadcasts, video for television was encoded using analog standards. There were/are three competing standards for this — NTSC (National Television System Committee), PAL (Phase Alternating Line), and SECAM. SECAM is essentially a slightly modified PAL, so there are two major standards at play here.&lt;/p&gt;
+
+&lt;h4 id=&quot;ntsc-or-pal&quot;&gt;NTSC or PAL?&lt;/h4&gt;
+
+&lt;p&gt;Much like which countries drive on which side of the road, wether countries use NTSC or PAL largely depends on their neighbors, and their desired marketability for products and content they make to be used in other countries.&lt;/p&gt;
+
+&lt;p&gt;Let’s have a look at the NTSC and PAL distribution world wide:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg&quot; alt=&quot;NTSC &amp;amp; PAL distribution&quot; title=&quot;NTSC &amp;amp; PAL distribution&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we can see, NTSC(-J) dominates in northern, central, and the top half of southern America, and also Japan, which is notable. PAL and its close cousin SECAM dominates everywhere else. If you use the same display standard as your neighbor, this makes it very easy for you to share video products across your markets. You can exchange tapes and video recordings to broadcast on TV. Your game console systems have interchangeable games. So why not make it so everything can use both?&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, when you have a standard, everything has to adapt to the standard for the processing chain to work. In a PAL environment, Your video tape is PAL, the VCR is PAL, and your TV is also PAL. If you make a swapping VCR, then you also need multi-format tapes, and a swapping TV as well. This is a huge cost for the consumer, and a huge cost to the industry. As far as the situation was in NTSC and PAL’s hey-day, it was just too hard.&lt;/p&gt;
+
+&lt;p&gt;It’s &lt;em&gt;possible&lt;/em&gt;, but not straight-forward to convert between the systems, and video quality is lost in the process, plus, next to no consumer devices are actually able to do this. A PAL game console plays PAL games. A PAL VCR records and plays back PAL video. In recent years we are able to convert with consumer PCs, but we don’t use PAL and NTSC now, so its usefulness is passed its used-by date.&lt;/p&gt;
+
+&lt;p&gt;Another issue here is timing. As we will shortly learn, NTSC and PAL use different frame rates. Converting between them causes video to either speed up (PAL -&amp;gt; NTSC) or slow down (NTSC -&amp;gt; PAL). This if left unchecked can alter runtimes for hour long shows by as much as minutes. Some feature length films shown on TV after conversion were actually 4-10 minutes shorter or longer than their real run time because of the effects. We can mitigate this by changing the frames. For PAL to NTSC this is fine, as we simply drop NTSC’s extra frames to make correct the correct PAL frame rate. But for NTSC to PAL, frames have to be repeated to make up the difference. There are lots of techniques to do this, but it still affects the video quality regardless. This has traditionally made NTSC -&amp;gt; PAL transmission easier.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-are-the-actual-differences-between-the-two&quot;&gt;What are the actual differences between the two?&lt;/h4&gt;
+
+&lt;p&gt;With the incompatibility of NTSC and PAL established, what actually sets them apart?&lt;/p&gt;
+
+&lt;p&gt;There are two major components that define how a video looks to the viewer. One is the resolution or definition of the video i.e. how clear the picture is. Two is the speed at which the video is refreshed to depict motion, commonly known as the refresh rate (or frame rate in progressive video). These two values are what changes in NTSC and PAL.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at NTSC first:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Resolution&lt;/td&gt;
+      &lt;td&gt;480 lines&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Refresh rate&lt;/td&gt;
+      &lt;td&gt;29.976&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Field rate&lt;/td&gt;
+      &lt;td&gt;59.94&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;But what the heck are lines? I thought video resolution was measured in pixels! - And you’d be right, if we were talking about progressive digital video, however, we’re talking about analog video, and there are no pixels here. Analog video is drawn on the screen by an electron gun (sounds cool right?) firing electrons in horizontal lines across the screen. The physical size of theses lines are determined by a combination of the resolution of the video standard in use, and the physical size of the screen, where as many lines are available are displayed to fill the physical screen size. In the case of NTSC, this is 480 lines.&lt;/p&gt;
+
+&lt;h4 id=&quot;interlacing&quot;&gt;Interlacing&lt;/h4&gt;
+
+&lt;p&gt;But what are fields? - This is the cool part. If you ever watched television on a CRT did you ever wonder why it was so much more fluid than video on computers (at least before 60fps become common)? This is because a little trick is pulled by both NTSC and PAL to ‘double’ the frame rate, which makes it look more fluid to the human eye. This process is called interlacing. Interlacing takes every second line in a frame and delays it by (in the case of NTSC) 1/60th of a second. What this results in is that instead of 30 whole &lt;em&gt;frames&lt;/em&gt; in a second being displayed, 60 &lt;em&gt;fields&lt;/em&gt; are actually displayed, as half the image comes every 1/60th of a second. On displays that are designed to work with interlaced video, this makes the video actually look like 60 &lt;em&gt;frames&lt;/em&gt; per second , even though it’s not. The loss of quality of those missing 30 true frames per second is almost imperceivable to the human eye, which is why they developed this technique to save spectrum for broadcast, instead of changing the number of lines, which would’ve reduced the quality visibly.&lt;/p&gt;
+
+&lt;h5 id=&quot;why-is-interlacing-bad-then---ive-heard-people-say-its-bad&quot;&gt;Why is interlacing bad then? - I’ve heard people say it’s bad.&lt;/h5&gt;
+
+&lt;p&gt;Well, it’s not, &lt;em&gt;at least when it’s displayed correctly.&lt;/em&gt; Progressive displays (whose primary difference from interlacing is that it displays a whole frame at once) are incapable of showing interlacing correctly, and actually show the ever so slight difference in frames as they display the two separate field sets simultaneously. This also has the effect of halving the effective frame rate. What this looks like is that edges in frames appear sawtoothed:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/freddie1.jpg&quot; alt=&quot;Interlaced Freddie&quot; title=&quot;Interlaced Freddie&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An interesting effect is created on scene changes, where two images appear together with alternating lines showing each image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/freddie2.jpg&quot; alt=&quot;Freddie and crowd&quot; title=&quot;Freddie and crowd&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can mitigate this by converting interlaced video to progressive via conversion tools, which get more and more advanced every day. &lt;a href=&quot;https://handbrake.fr/&quot;&gt;Handbrake&lt;/a&gt;, for example, can do this, and techniques to achieve this with as little information loss as possible via machine learning are also developing, but the issue is that these techniques take time and effort to apply, and most people just don’t care. Which means that when they upload their family VHS tapes, old TV shows and other interlaced media, we see the jaggies on YouTube and where-ever else the content gets shared. This has led to minor stigma against interlacing.&lt;/p&gt;
+
+&lt;p&gt;The truth of it is that interlacing should die. Displays that can correctly process interlaced content are becoming rarer by the day as virtually every new device since 2010 uses a progressive display. Computers have used progressive displays since their inception, and that wont change anytime soon. This isn’t a problem now as we have the ability to have true 60fps video, but it was a cool technique back in the day.&lt;/p&gt;
+
+&lt;h4 id=&quot;so-what-about-pal&quot;&gt;So what about PAL?&lt;/h4&gt;
+
+&lt;p&gt;Now that we know what fields and interlacing are, lets look at PAL:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Resolution&lt;/td&gt;
+      &lt;td&gt;576 lines&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Refresh rate&lt;/td&gt;
+      &lt;td&gt;24.976&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Field rate&lt;/td&gt;
+      &lt;td&gt;49.94&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;So PAL has more lines but less fields. This means the definition is better, but the motion is less fluid. And, functionally, thats the only difference between NTSC and PAL. They both use interlacing, fields, lines and even the same colour encoding scheme. To most people, they’d struggle to tell the difference if sat down in front of two TVs, one showing NTSC video, and one showing PAL. But the difference is there, and because of it a huge amount of products made between 1970 and 2010 (especially in Japan) come in both PAL and NTSC variants. One example is the Nintendo Wii. If you by a PAL Wii, you need to buy the corresponding PAL Wii games, indicated by the encoding type on the DVD case:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/wiipartypal.jpg&quot; alt=&quot;Wii Party&quot; title=&quot;Wii Party&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Nintendo Wii is actually capable of playing the opposing standard’s games, but not without first jailbreaking it and un-region locking it. And even if the games work, the settings menu is borked.&lt;/p&gt;
+
+&lt;h4 id=&quot;you-still-havent-told-me-where-576i-comes-from&quot;&gt;You still haven’t told me where ‘576i’ comes from!&lt;/h4&gt;
+
+&lt;p&gt;In recent years, a quick standard to describe how a video is encoded has arisen from the apparent need to reduce confusion in video types. This standard is very simple: for interlaced video it’s the number of lines with an ‘i’ to indicate interlacing, so PAL is 576i! For progressive video it’s the number of vertical pixels with a ‘p’ to indicate progressive. This is a common misconception where people think the ‘p’ means pixels, it does not! A standard Full HD monitor would be notated as 1080p.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t guessed I live in a PAL region, New Zealand, and I always wondered why every device and DVD we bought had PAL written on it until I learned why, and now hopefully you know too! 576i I think appropriately sums up the content of this site, being a reference to old retro technology, and it’s nice and short.&lt;/p&gt;
+
+&lt;p&gt;You can read more about this on &lt;a href=&quot;https://en.wikipedia.org/wiki/Broadcast_television_systems&quot;&gt;Wikipedia&lt;/a&gt; if you are interested.&lt;/p&gt;
+
+&lt;h5 id=&quot;bonus-why-are-ntscpals-refresh-rates-2497629976-why-not-2530&quot;&gt;Bonus: Why are NTSC/PAL’s refresh rates 24.976/29.976? Why not 25/30?&lt;/h5&gt;
+
+&lt;p&gt;This is super-duper complicated to fully explain, so i’ll give a brief overview. NTSC and PAL were invented before colour television was a thing. At some point in the 1960s, they decided that colour was feasible and they should include it in television broadcasts, but the problem was, they had constructed wildly expensive NTSC and PAL television networks and they wern’t so keen on developing a new system, requiring the whole market to go out and buy new televisions to have &lt;em&gt;any&lt;/em&gt; picture, let alone colour. Maintaining two separate encoding schemes was expensive, and they didn’t have the radio spectrum nor funds to do it.&lt;/p&gt;
+
+&lt;p&gt;The solution was to modify the current system. They had to do it in a way that meant black and white TV’s could still watch, but also enable colour to be broadcasted to TV’s that did support it. To achieve this, they simply carved a small chunk of spectrum out of the frame rate (precisely 0.02 seconds worth), and dumped the colour information there. This worked to achieve both their goals, as the original TV’s just ignored the information. This permanently reduced NTSC and PAL’s frame rate for the rest of it’s life span.&lt;/p&gt;
+
+&lt;p&gt;Unlike the issue converting between NTSC and PAL as mentioned earlier, the difference is too small to really affect runtimes so it’s not a huge issue when converting to progressive. With the return to progressive, we have returned to the rounded frame rates, and due to NTSC regions dominating video storage and playback design systems, PAL’s 25 &amp;amp; 50 frame/field rates respectively are fast becoming a thing of the past.&lt;/p&gt;</content><author><name></name></author><summary type="html">WTF is 576i and what does that mean?</summary></entry></feed>
